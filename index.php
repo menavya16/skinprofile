@@ -15,38 +15,40 @@
 
 
     <body id = "page-top">
-        <div class="header">
-            <h1 class="text-center">Welcome to the new You</h1>
+      <div class="spacing">
+        <div id=header>
+            <p class="text-center>Welcome to the new You</p>
         </div>
 
-        <div class="container spacing">
+        <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <a href="login.php" class="btn btn-outline-secondary">Login</a>
-                    <a href="register.php" class="btn btn-outline-secondary">Register</a>
+                    <a href="login.php" class="btn btn-outline-secondary btn-lg">Login</a>
+                    <a href="register.php" class="btn btn-outline-secondary btn-lg">Register</a>
 
                 </div>
             </div>
         </div>
+      </div>
 
         <div class="container text-center">
-            <div class="row">
+            <div class="row bottom">
                 <div class="col-lg-4">
                     <i class="fas fa-heart"></i>
                     <h3>Heathly Products</h3>
-                    <p>Skin profile recommends healthy skin products for all kinds of skin care needs.<p>
+                    <p class="blog">Skin profile recommends healthy skin products for all kinds of skin care needs.<p>
                 </div>
 
                 <div class="col-lg-4">
                     <i class="fas fa-code"></i>
                     <h3>Advanced Backend Technology</h3>
-                    <p> Our code processes each users needs and produces the best products suited based on our systems algorithms <p>
+                    <p class="blog"> Our code processes each users needs and produces the best products suited based on our systems algorithms <p>
                 </div>
 
                 <div class="col-lg-4">
                     <i class="fas fa-user"></i>
                     <h3>Individualized Profile</h3>
-                    <p> When you sign up with Skin Profile, your personalized needs are stored and tracked, allowing us to continually
+                    <p class="blog"> When you sign up with Skin Profile, your personalized needs are stored and tracked, allowing us to continually
                         recommend new products just for you! <p>
                 </div>
             </div>
