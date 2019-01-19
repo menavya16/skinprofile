@@ -12,6 +12,6 @@
     <body id = "page-top">
        <h1 class="text-center">Welcome</h1>
 
-       <a href="register.php" class="btn">Register</a>
+       <a href="register.php" class="btn btn-outline-primary">Register</a>
     </body>
 </html>
