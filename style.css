@@ -4,7 +4,10 @@
 }
 
 .header{
-  padding-top:20%
+  padding-top:20%;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  
 }
 
 body {
@@ -13,6 +16,6 @@ body {
 
   background-image: url(img/background.jpg);
   background-size: cover;
-  
+
 
 }
