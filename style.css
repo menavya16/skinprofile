@@ -4,8 +4,14 @@
 }
 
 .header{
-  padding-top:20%
+  padding-top:20%;
 }
+
+.spacing{
+  padding-top:5%;
+  padding-bottom: 5%;
+}
+
 
 body {
   padding-top: 10px;
