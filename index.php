@@ -20,9 +20,7 @@
         <div class="container spacing">
             <div class="row">
                 <div class="col text-center">
-                    <input type="text" name="name" value="">
                     <a href="login.php" class="btn btn-outline-secondary">Login</a>
-                    <input type="text" name="email" value="">
                     <a href="register.php" class="btn btn-outline-secondary">Register</a>
 
                 </div>
@@ -32,18 +30,22 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-4">
-                    <h3>Header 1</h3>
-                    <p> sample text <p>
+                    <i class="fas fa-heart"></i>
+                    <h3>Heathly Products</h3>
+                    <p>Skin profile recommends healthy skin products for all kinds of skin care needs.<p>
                 </div>
 
                 <div class="col-lg-4">
-                    <h3>Header 1</h3>
-                    <p> sample text <p>
+                    <i class="fas fa-code"></i>
+                    <h3>Advanced Backend Technology</h3>
+                    <p> Our code processes each users needs and produces the best products suited based on our systems algorithms <p>
                 </div>
 
                 <div class="col-lg-4">
-                    <h3>Header 1</h3>
-                    <p> sample text <p>
+                    <i class="fas fa-user"></i>
+                    <h3>Individualized Profile</h3>
+                    <p> When you sign up with Skin Profile, your personalized needs are stored and tracked, allowing us to continually
+                        recommend new products just for you! <p>
                 </div>
             </div>
 
