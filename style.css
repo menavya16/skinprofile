@@ -5,6 +5,9 @@
 
 .header{
   padding-top:20%;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  
 }
 
 .spacing{
@@ -19,6 +22,6 @@ body {
 
   background-image: url(img/background.jpg);
   background-size: cover;
-  
+
 
 }
