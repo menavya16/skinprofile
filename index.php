@@ -16,12 +16,15 @@
         <div class="header">
             <h1 class="text-center">Welcome to the new You</h1>
         </div>
-        
+
         <div class="container spacing">
             <div class="row">
                 <div class="col text-center">
-                    <a href="register.php" class="btn btn-outline-secondary">Register</a>
+                    <input type="text" name="name" value="">
                     <a href="login.php" class="btn btn-outline-secondary">Login</a>
+                    <input type="text" name="email" value="">
+                    <a href="register.php" class="btn btn-outline-secondary">Register</a>
+
                 </div>
             </div>
         </div>
