@@ -10,11 +10,20 @@
     </head>
 
     <body id = "page-top">
-        <h1 class="text-center">Welcome</h1>
+        <div class="header">
+            <h1 class="text-center">Welcome</h1>
+        </div>
         <div class="container">
-            <div class="col-lg-6">
-                <a href="register.php" class="btn btn-outline-secondary">Register</a>
-                <a href="login.php" class="btn btn-outline-secondary">Login</a>
+            <div class="centre col-md-4 mb-5 mb-lg-0">
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="register.php" class="btn btn-outline-secondary">Register</a>
+                    <a href="login.php" class="btn btn-outline-secondary">Login</a>
+                </div>
             </div>
         </div>
     </body>
