@@ -10,8 +10,12 @@
     </head>
 
     <body id = "page-top">
-       <h1 class="text-center">Welcome</h1>
-
-       <a href="register.php" class="btn btn-outline-primary">Register</a>
+        <h1 class="text-center">Welcome</h1>
+        <div class="container">
+            <div class="col-lg-6">
+                <a href="register.php" class="btn btn-outline-secondary">Register</a>
+                <a href="login.php" class="btn btn-outline-secondary">Login</a>
+            </div>
+        </div>
     </body>
 </html>
