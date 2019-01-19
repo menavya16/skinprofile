@@ -7,7 +7,7 @@
   padding-top:20%;
   font-family: 'Indie Flower', cursive;
   font-weight: 700;
-  
+
 }
 
 .spacing{
@@ -19,8 +19,7 @@
 body {
   padding-top: 10px;
   width:100%;
-
-  background-image: url(img/background.jpg);
+  background: url(img\rose.jpg);
   background-size: cover;
 
 
