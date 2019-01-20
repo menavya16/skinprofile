@@ -32,7 +32,9 @@
       <div class="text-center cursive">
           <p id="display"></p>
       </div>
-
+      <div class="text-center">
+        <a href="./search/productSearch.php" class="btn btn-outline-secondary btn-lg">Discover More</a>
+      </div>
 
     </body>
 
