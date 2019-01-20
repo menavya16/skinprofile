@@ -52,9 +52,9 @@ var data =
 
 //var badIngredients = avoid_list;
 
-function main(){
+function main(avoid_list){
   productInfo = convertJSON(data);
-  document.getElementById("display").innerHTML = displayOutput(getProducts(["grass"], productInfo, 500));
+  document.getElementById("display").innerHTML = displayOutput(getProducts(avoid_list, productInfo, 500));
 }
 
 function getJSON(){

@@ -18,13 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <script>
           var avoid_list = <?php echo(json_encode($avoid_list)); ?>
+          main(avoid_list);
         </script>
     </head>
 
 
     <body id = "page-top">
       <div class="spacing">
-        <div id=header>
+        <div id="header">
             <p class="text-center">Some products perfect for you</p>
         </div>
       </div>
