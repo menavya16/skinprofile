@@ -18,10 +18,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-
-
-
-
     <body id = "page-top">
       <div class="spacing">
         <div id=header>
@@ -29,6 +25,7 @@
         </div>
       </div>
       <div class="text-center cursive">
+          <p id="profile"></p>
           <p id="display"></p>
       </div>
       <div class="text-center">
@@ -37,6 +34,7 @@
 
       <script>
         var avoid_list = <?php echo(json_encode($avoid_list)); ?>;
+        document.getElementById('profile').innerHTML = "Based on these ingredients you should avoid: " + avoid_list; 
         //main(avoid_list);
       </script>
     </body>
