@@ -1,11 +1,11 @@
 <?php
-
 $servername = "localhost";
 $username = "iw3htp";
 $password = "password";
 $avoid_list = array();
 //carry over username from login to know which user is logged in
 $uname = $_SESSION['uname'];
+
 
 // create and connect to mysql server
 if ( !( $database = mysqli_connect($servername, $username, $password)))
@@ -25,4 +25,9 @@ while ($row = $result->fetch_array()) {
   array_push($avoid_list , $row['ing']);
 }
 
+//$data = ['avoid_list' => $avoid_list ];
+//$_POST['avoid_list'] = $avoid_list;
+
+$json["avoid_list"] = $avoid_list;
+//echo json_encode($json);
 ?>

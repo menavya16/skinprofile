@@ -50,6 +50,7 @@ global $database;
       <input type="checkbox" name="skinconcerns[]" value="wrinkles">Wrinkles<br>
       <input type="checkbox" name="skinconcerns[]" value="blackhead">Blackheads<br>
     <button type="submit" name="registration">Register!</button>
+		
   </form>
 
 

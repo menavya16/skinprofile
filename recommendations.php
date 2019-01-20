@@ -2,7 +2,6 @@
   session_start();
   include "user/server.php";
 ?>
-
 <!DOCTYPE html>
 
 <html>
@@ -16,9 +15,10 @@
         <link href="style.css?v={random number/string}" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-        <script>
-          var avoid_list = <?php echo(json_encode($avoid_list)); ?>
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
     </head>
 
 
@@ -31,7 +31,14 @@
       <div class="text-center cursive">
           <p id="display"></p>
       </div>
+      <div class="text-center">
+        <a href="./search/productSearch.php" class="btn btn-outline-secondary btn-lg">Discover More</a>
+      </div>
 
+      <script>
+        var avoid_list = <?php echo(json_encode($avoid_list)); ?>;
+        //main(avoid_list);
+      </script>
 
     </body>
 

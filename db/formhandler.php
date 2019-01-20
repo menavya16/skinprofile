@@ -65,19 +65,15 @@ if (isset($_POST['registration'])) {
     $query = "INSERT INTO users (uname, password, phone, budget) VALUES ('$uname', '$pswd', '$phone', '$budget')";
     mysqli_query($database, $query);
 
-    echo $skintype;
     $query = "INSERT INTO user_concerns(uname, concern) VALUES ('$uname', '$skintype')";
     mysqli_query($database, $query);
 
-    print_r($skindiseases);
     $numskindiseases = count($skindiseases);
     for ($i=0; $i < $numskindiseases; $i++) {
-      echo $skindiseases[$i];
       $query =  "INSERT INTO USER_CONCERNS(uname, concern) VALUES ('$uname', '$skindiseases[$i]');";
       mysqli_query($database, $query);
     }
 
-    print_r($skinconcerns);
     $numskinconcerns = count($skinconcerns);
     for ($i=0; $i < $numskinconcerns; $i++) {
       $query =  "INSERT INTO USER_CONCERNS(uname, concern) VALUES ('$uname', '$skinconcerns[$i]');";
@@ -100,11 +96,10 @@ if (isset($_POST['login'])) {
   $result = mysqli_query($database, $query);
   if (mysqli_num_rows($result) == 1) {
     $_SESSION['uname'] = $uname; // if the login was successful, set session uname to that username so we know this user is logged in
-    header('location: user/index.php');
+    header('location: recommendations.php');
   } else {
     array_push($messages, "Wrong username or password.");
   }
-
 }
 
 

@@ -1,6 +1,5 @@
 
-
-var data =
+  var data =
 [
   {
     "name": "SK-II Facial Treatment Essence",
@@ -43,18 +42,35 @@ var data =
     "url": "https://www.sephora.com/ca/en/product/soy-face-cleansing-milk-P411016?icid2=products%20grid:p411016:product"
   },
   {
-    "name": "",
+    "name": "philosophy purity made simple",
+    "description": "An award-winning, highly effective one-step facial cleanser to tone and hydrate skin.",
     "ing": "Water, Sodium Lauroamphoacetate, Sodium Trideceth Sulfate, Limnanthes Alba (Meadowfoam) Seed Oil, Coco-Glucoside, Coconut Alcohol, Peg-120 Methyl Glucose Dioleate, Glycerin, Carbomer, Isopropyl Alcohol, Polysorbate 20, Citric Acid, Imidazolidinyl Urea, Methylparaben, Aniba Rosaeodora (Rosewood) Wood Oil, Propylparaben, Triethanolamine, Amyris Balsamifera Bark Oil, Bulnesia Sarmientoi Wood Oil, Cymbopogon Martini Oil, Pelargonium Graveolens Flower Oil, Rosa Centifolia Flower Oil, Santalum Album (Sandalwood) Oil, Daucus Carota Sativa (Carrot) Seed Oil, Mimosa Tenuiflora Bark Extract, Ormenis Multicaulis Oil, Piper Nigrum (Pepper) Fruit Oil, Salvia Sclarea (Clary) Oil, Fd&C Yellow No. 5 (Ci 19140)",
     "type": "cleanser",
-    "price": 32
+    "price": 32,
+    "price_range": "0 - 50",
+    "image": "https://www.sephora.com/productimages/sku/s705988-main-hero.jpg",
+    "url": "https://www.sephora.com/ca/en/product/purity-made-simple-P7109"
   }
 ]
+//var badIngredients = avoid_list;
+var badIngredients = [];
 
-var badIngredients = avoid_list;
+$(document).ready(function(){
+  $.ajax({
+    dataType: 'json',
+    url: 'user/server.php',
+    type: 'GET',
+    data: {"data": "avoid_list"},
+    success: function(data) {
+      alert(data.avoid_list);
+      badIngredients = data.avoid_list;
+    }
+  });
+});
 
-function main(){
+function main(data2){
   productInfo = convertJSON(data);
-  document.getElementById("display").innerHTML = displayOutput(getProducts([avoid_list, productInfo, 500));
+  document.getElementById("display").innerHTML = displayOutput(getProducts(data2, productInfo, 500));
 }
 
 function getJSON(){
@@ -118,5 +134,5 @@ function displayOutput(productList){
   return output;
 }
 
-main()
+main(avoid_list);
 //document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))

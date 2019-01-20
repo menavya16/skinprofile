@@ -11,6 +11,9 @@
   var avoid_list = <?php echo(json_encode($avoid_list)); ?>
 </script>
 <script src="user/index.php"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 </head>
 
 <body>
