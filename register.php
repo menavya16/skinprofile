@@ -25,6 +25,14 @@ global $database;
     <label>Username (*)</label> <input type="text" name="uname_reg" required/><br>
     <label>Password (*)</label> <input type="password" name="pswd_reg" required/><br>
     <label>Confirm password (*)</label> <input type="password" name="pswd2_reg" required/><br>
+    <label>Phone (*)</label> <input type="text" name="phone" required/><br>
+    <label>Budget (*)</label>
+			<select name="budget">
+	      <option value="Low">Low ($0-$40 per product)</option>
+	      <option value="Med">Medium ($40-$100 per product)</option>
+	      <option value="High">High ($100-$200 per product)</option>
+	      <option value="Very">Very high ($200+ per product)</option>
+	    </select><br>
     <label>What is your skin type? </label>
       <select name="skintype">
         <option value="sensitive">Sensitive</option>
@@ -34,14 +42,13 @@ global $database;
         <option value="normal">Normal</option>
       </select><br>
     <label> Do you have any known skin disease(s)? </label><br>
-      <input type="checkbox" name="skindisease" value="eczema">Eczema<br>
-      <input type="checkbox" name="skindisease" value="psoriasis">Psoriasis<br>
-      <input type="checkbox" name="skindisease" value="rosea">Rosea<br>
+      <input type="checkbox" name="skindisease[]" value="eczema">Eczema<br>
+      <input type="checkbox" name="skindisease[]" value="psoriasis">Psoriasis<br>
+      <input type="checkbox" name="skindisease[]" value="rosea">Rosea<br>
     <label> Do you have any skin concerns? </label><br>
-      <input type="checkbox" name="skinconcerns" value="acne">Acne, breakouts<br>
-      <input type="checkbox" name="skinconcerns" value="pores">Pores (ie, too visible)<br>
-      <input type="checkbox" name="skinconcerns" value="wrinkles">Wrinkles<br>
-      <input type="checkbox" name="skinconcerns" value="dark">Dark circles<br>
+      <input type="checkbox" name="skinconcerns[]" value="acne">Acne, breakouts<br>
+      <input type="checkbox" name="skinconcerns[]" value="wrinkles">Wrinkles<br>
+      <input type="checkbox" name="skinconcerns[]" value="blackhead">Blackheads<br>
     <button type="submit" name="registration">Register!</button>
   </form>
 
