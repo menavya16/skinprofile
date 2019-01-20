@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>testing</title>
+  <script src="lib.js"></script>
+
+</head>
+<body>
+  <script>
+    //const lib = require('lib')({token: '0wK4Nz4RkPXQneML4diP6u6CW5MjHu7q6LbpszzlwelVi2QIKCbqi9dQxJ57gCHj'});
+    const sms = lib.utils.sms['@1.0.9'];
+
+    var sendMsg = async(number, body) => {
+      number="4166270647";
+      body="sunscreen";
+      let result = await sms({
+       to: number, // (required)
+       body: JSON.stringify(body) // (required)
+      });
+      return result;
+    };
+
+     sendMsg(); //to call the api
+
+  </script>
+</body>
+</html>
