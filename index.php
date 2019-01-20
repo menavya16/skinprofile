@@ -33,19 +33,19 @@
 
         <div class="container text-center">
             <div class="row bottom">
-                <div class="col-lg-4 cursive">
+                <div class="col-lg-4">
                     <i class="fas fa-heart"></i>
                     <h3>Heathly Products</h3>
                     <p class="blog">Skin profile recommends healthy skin products for all kinds of skin care needs.<p>
                 </div>
 
-                <div class="col-lg-4 cursive">
+                <div class="col-lg-4">
                     <i class="fas fa-code"></i>
                     <h3>Advanced Backend Technology</h3>
                     <p class="blog"> Our code processes each users needs and produces the best products suited based on our systems algorithms <p>
                 </div>
 
-                <div class="col-lg-4 cursive">
+                <div class="col-lg-4">
                     <i class="fas fa-user"></i>
                     <h3>Individualized Profile</h3>
                     <p class="blog"> When you sign up with Skin Profile, your personalized needs are stored and tracked, allowing us to continually

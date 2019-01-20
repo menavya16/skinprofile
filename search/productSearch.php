@@ -21,14 +21,9 @@
 
   <body>
     <div class="ais-InstantSearch">
-      <h1 class="text-center">Discover Your Palette</h1>
+      <p class="header text-center">Discover Your Palette</p>
 
-      <div class="left-panel">
-        <h2>Price Range</h2>
-        <div id="price-range"></div>
-      </div>
-
-      <div class="right-panel">
+      <div class="center-panel">
         <div id="searchbox" class="ais-SearchBox"></div>
         <div id="hits"></div>
         <div id="pagination"></div>

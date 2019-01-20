@@ -3,10 +3,6 @@ body {
   padding: 1em;
 }
 
-.ais-ClearRefinements {
-  margin: 1em 0;
-}
-
 .ais-SearchBox {
   margin: 1em 0;
 }
@@ -15,14 +11,11 @@ body {
   margin-top: 1em;
 }
 
-.left-panel {
-  padding-top: 40px;
-  float: left;
-  width: 250px;
-}
 
-.right-panel {
-  margin-left: 260px;
+
+.center-panel {
+  width: 100%;
+  padding: 0 10% 0 10%;
 }
 
 .ais-InstantSearch {
@@ -31,10 +24,15 @@ body {
   margin: 0 auto;
 }
 
+/* .ais-NumericMenu {
+  background-color: #fff;
+} */
+
 .ais-Hits-item {
   margin-bottom: 1em;
   width: calc(50% - 1rem);
   background-color: #fff;
+  border-radius: 5%;
 }
 
 .ais-Hits-item img {
@@ -45,9 +43,13 @@ body {
   margin-bottom: 0.5em;
 }
 
+.hit-price {
+  font-weight: bold;
 }
+
 .hit-description {
-  color: #888;
-  font-size: 14px;
+  font-size: 12px;
+  font-color: grey;
   margin-bottom: 0.5em;
+  padding-left: 50px;
 }

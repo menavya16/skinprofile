@@ -26,6 +26,7 @@ $index->setSettings(
       'ing',
       'name',
       'description',
+      'price'
     ]
   ]
 );
