@@ -1,12 +1,20 @@
 [
-{
-  "name": "SK-II Facial Treatment Essence",
-  "ing": "Galactomyces Ferment Filtrate (Pitera), Butylene Glycol, Pentylene Glycol, Water, Sodium Benzoate, Methylparaben, Sorbic Acid",
-  "price": 225
-},
-{
-  "name": "Drunk Elephant: B-Hydra™ Intensive Hydration Serum",
-  "ing": "Water, Coconut Alkanes, Ammonium Acryloyldimethyltaurate/VP Copolymer, Glycerin, Pentylene Glycol, Sclerocarya Birrea Seed Oil, Wheat Amino Acids, Ananas Sativus (Pineapple) Fruit Extract, Berberis Vulgaris Root Extract, Citrullus Lanatus (Watermelon) Fruit Extract, Lens Esculenta (Lentil) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Coco-Caprylate/Caprate, Panthenol, Sodium PCA, Sodium Hyaluronate Crosspolymer, Dipotassium Glycyrrhizate, Niacinamide, Cyclodextrin, Sodium Hyaluronate, Sodium Lactate, Phenoxyethanol, Hydroxyproline, Trisodium Ethylenediamine Disuccinate, Citric Acid, Caprylyl Glycol, Chlorphenesin, Ethylhexylglycerin",
-  "price": 65
-}
+  {
+    "name": "SK-II Facial Treatment Essence",
+    "description": "This pure, lightweight miracle water is quickly absorbed into the skin. Its formula gently exfoliates and helps moderate the skin's surface renewal cycle.",
+    "ing": "Galactomyces Ferment Filtrate (Pitera), Butylene Glycol, Pentylene Glycol, Water, Sodium Benzoate, Methylparaben, Sorbic Acid",
+    "price": 225,
+    "price_range": "200 - 250",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61wYEzRXLqL._SY679_.jpg",
+    "url": "https://www.amazon.com/SK-II-Facial-Treatment-Essence-fl/dp/B002SQ0NOW"
+  },
+  {
+    "name": "Drunk Elephant: B-Hydra™ Intensive Hydration Serum",
+    "description": "B-Hydra™ is a cool drink of water for your thirsty skin. This ultra-hydrating vitamin B5 serum replenishes nutrients while delivering hydration throughout the day to improve the look of skin texture and tone.",
+    "ing": "Water, Coconut Alkanes, Ammonium Acryloyldimethyltaurate/VP Copolymer, Glycerin, Pentylene Glycol, Sclerocarya Birrea Seed Oil, Wheat Amino Acids, Ananas Sativus (Pineapple) Fruit Extract, Berberis Vulgaris Root Extract, Citrullus Lanatus (Watermelon) Fruit Extract, Lens Esculenta (Lentil) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Coco-Caprylate/Caprate, Panthenol, Sodium PCA, Sodium Hyaluronate Crosspolymer, Dipotassium Glycyrrhizate, Niacinamide, Cyclodextrin, Sodium Hyaluronate, Sodium Lactate, Phenoxyethanol, Hydroxyproline, Trisodium Ethylenediamine Disuccinate, Citric Acid, Caprylyl Glycol, Chlorphenesin, Ethylhexylglycerin",
+    "price": 65,
+    "price_range": "50 - 100",
+    "image": "https://www.sephora.com/productimages/product/p406712-av-01-zoom.jpg",
+    "url": "https://www.sephora.com/ca/en/product/b-hydra-intensive-hydration-gel-P406712"
+  }
 ]

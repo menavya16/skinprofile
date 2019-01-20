@@ -10,7 +10,7 @@ $client = Algolia\AlgoliaSearch\SearchClient::create(
 '4d1cd9774579ff04e6707c61ad10f3ef'
 );
 
-$index = $client->initIndex('test_BILL');
+$index = $client->initIndex('products');
 
 $batch = json_decode(file_get_contents('js\products.json'), true);
 
@@ -18,17 +18,16 @@ $index->saveObjects($batch,
 ["autoGenerateObjectIDIfNotExist" => true]
 );
 
-$index->setSettings(['customRanking' => ['desc(followers)']]);
+$index->setSettings(['customRanking' => ['desc(price)']]);
 
 $index->setSettings(
   [
     'searchableAttributes' => [
-      'name',
       'ing',
-      'price'
+      'name',
+      'description',
     ]
   ]
 );
-
 
 ?>
