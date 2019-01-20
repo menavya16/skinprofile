@@ -45,7 +45,8 @@ body {
   position: absolute;
 }
 
-.text {
+.text,
+.btn {
   font-family: 'Indie Flower', cursive;
 }
 .blog {
@@ -63,4 +64,12 @@ input {
   font-size: 25px;
   font-family: 'Indie Flower', cursive;
   background-color: rgba(0,0,0,0);
+}
+
+#user {
+  padding-top: 10%;
+}
+
+.discover {
+  padding-top: 100px;
 }
