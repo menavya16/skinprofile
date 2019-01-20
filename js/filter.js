@@ -12,13 +12,34 @@ var data =
     }
     ]
 
-var productInfo = []
-
-for (var x in data){
-
-  var y = JSON.parse(JSON.stringify(data[x]))
-  productInfo.push([y.name, y.ing.split(', '), y.price]);
+function main(){
+  productInfo = convertJSON(getJSON())
+  console.log(productInfo[0][0])
+  document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))
 }
+
+function getJSON(){
+  $.ajax({
+    url:'./products.json',
+    dataType: 'json',
+    type: "POST",
+    success: function(data){
+      return data;
+    }
+  })
+}
+
+function convertJSON(data){
+  var productInfo = []
+
+  for (var x in data){
+
+    var y = JSON.parse(JSON.stringify(data[x]))
+    productInfo.push([y.name, y.ing.split(', '), y.price]);
+  }
+
+  return productInfo;
+} 
 
 function includes(key, array){
   return (array.indexOf(key) > -1)
@@ -58,7 +79,8 @@ function displayOutput(productList){
   return output;
 }
 
-document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))
+main()
+//document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))
 
 
 
