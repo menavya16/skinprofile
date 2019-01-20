@@ -18,8 +18,6 @@ $index->saveObjects($batch,
 ["autoGenerateObjectIDIfNotExist" => true]
 );
 
-$index->setSettings(['customRanking' => ['desc(followers)']]);
-
 $index->setSettings(
   [
     'searchableAttributes' => [
@@ -30,5 +28,6 @@ $index->setSettings(
   ]
 );
 
+echo var_dump($index);
 
 ?>
