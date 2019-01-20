@@ -3,6 +3,8 @@ session_start();
 $servername = "localhost";
 $username = "iw3htp";
 $password = "password";
+$skindiseases = [];
+$skinconcerns = [];
 //initialize variables
 $uname_reg = "";
 $pswd_reg = "";
@@ -26,6 +28,8 @@ if (isset($_POST['registration'])) {
   $uname = mysqli_real_escape_string($database, $_POST['uname_reg']);
   $pswd = mysqli_real_escape_string($database, $_POST['pswd_reg']);
   $pswd2 = mysqli_real_escape_string($database, $_POST['pswd2_reg']);
+  $phone = mysqli_real_escape_string($database, $_POST['phone']);
+  $budget = mysqli_real_escape_string($database, $_POST['budget']);
 
   // check database to ensure the same username does not exist in the system.
   $uname_check_q = "SELECT * FROM users WHERE uname='$uname'";
@@ -48,8 +52,7 @@ if (isset($_POST['registration'])) {
     $skindiseases = $_POST['skindisease'];
   }
   /* array of skin diseases
-  $numskindiseases = count($skindiseases);
-  for ($i=0; $i < $numskindiseases; $i++) {
+
 
   }
   */
@@ -59,8 +62,28 @@ if (isset($_POST['registration'])) {
 
   if (count($messages) == 0) {
     $pswd = md5($pswd); // encrypt password
-    $query = "INSERT INTO users (uname, password) VALUES ('$uname', '$pswd')";
+    $query = "INSERT INTO users (uname, password, phone, budget) VALUES ('$uname', '$pswd', '$phone', '$budget')";
     mysqli_query($database, $query);
+
+    echo $skintype;
+    $query = "INSERT INTO user_concerns(uname, concern) VALUES ('$uname', '$skintype')";
+    mysqli_query($database, $query);
+
+    print_r($skindiseases);
+    $numskindiseases = count($skindiseases);
+    for ($i=0; $i < $numskindiseases; $i++) {
+      echo $skindiseases[$i];
+      $query =  "INSERT INTO USER_CONCERNS(uname, concern) VALUES ('$uname', '$skindiseases[$i]');";
+      mysqli_query($database, $query);
+    }
+
+    print_r($skinconcerns);
+    $numskinconcerns = count($skinconcerns);
+    for ($i=0; $i < $numskinconcerns; $i++) {
+      $query =  "INSERT INTO USER_CONCERNS(uname, concern) VALUES ('$uname', '$skinconcerns[$i]');";
+      mysqli_query($database, $query);
+    }
+
     array_push($messages, "You are now registered for an account. Your username is $uname");
   }
 
