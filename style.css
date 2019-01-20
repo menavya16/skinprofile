@@ -56,7 +56,11 @@ body {
   margin-bottom: 50px;
 }
 
+input {
+  background-color: rgba(0,0,0,0);
+}
 .question {
-  font-size: 18px;
+  font-size: 25px;
   font-family: 'Indie Flower', cursive;
+  background-color: rgba(0,0,0,0);
 }
