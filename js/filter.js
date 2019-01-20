@@ -1,4 +1,6 @@
-var data = 
+
+
+var data =
 [
   {
     "name": "SK-II Facial Treatment Essence",
@@ -76,7 +78,7 @@ function convertJSON(data){
   }
 
   return productInfo;
-} 
+}
 
 function includes(key, array){
   return (array.indexOf(key) > -1)
@@ -88,7 +90,7 @@ function suitable(allergens, ingredients){
   }
   else if (includes(allergens[0], ingredients)){
     return false;
-  } 
+  }
   else{
     allergens.shift();
     return suitable(allergens, ingredients)
@@ -118,6 +120,3 @@ function displayOutput(productList){
 
 main()
 //document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))
-
-
-

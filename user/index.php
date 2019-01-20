@@ -10,6 +10,7 @@
 <script>
   var avoid_list = <?php echo(json_encode($avoid_list)); ?>
 </script>
+<script src="user/index.php"></script>
 </head>
 
 <body>
