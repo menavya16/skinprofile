@@ -96,7 +96,7 @@ if (isset($_POST['login'])) {
   $result = mysqli_query($database, $query);
   if (mysqli_num_rows($result) == 1) {
     $_SESSION['uname'] = $uname; // if the login was successful, set session uname to that username so we know this user is logged in
-    header('location: recommendations.php');
+    header('location: user/index.php');
   } else {
     array_push($messages, "Wrong username or password.");
   }

@@ -57,7 +57,9 @@ global $database;
       <input type="checkbox" name="skinconcerns[]" value="wrinkles" class="animated fadeInUp delay-5s">Wrinkles &nbsp;
       <input type="checkbox" name="skinconcerns[]" value="blackhead" class="animated fadeInUp delay-5s">Blackheads<br><br><br>
     <button type="submit" name="registration" class="btn btn-outline-secondary btn-lg">Register! </button>
-    </div>
+		Click <a href="index.php">here</a> to return.
+		</div>
+
   </form>
 
 
