@@ -18,11 +18,8 @@ $index->saveObjects($batch,
 ["autoGenerateObjectIDIfNotExist" => true]
 );
 
-<<<<<<< HEAD
 $index->setSettings(['customRanking' => ['desc(price)']]);
 
-=======
->>>>>>> 6877c2875736fd3c60f853c7abd9c965c4b28923
 $index->setSettings(
   [
     'searchableAttributes' => [
@@ -33,9 +30,4 @@ $index->setSettings(
   ]
 );
 
-<<<<<<< HEAD
-=======
-echo var_dump($index);
-
->>>>>>> 6877c2875736fd3c60f853c7abd9c965c4b28923
 ?>
