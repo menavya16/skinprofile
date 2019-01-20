@@ -37,23 +37,17 @@ function suitable(allergens, ingredients){
   }
 }
 
-function getProducts(allergens, productList){
+function getProducts(allergens, productList, priceCap){
   var match = [];
 
   for (var x in productList){
-    if (suitable(allergens, productList[x][1])){
+    if (suitable(allergens, productList[x][1]) && priceCap <= productList[x][2]){
       match.push([productList[x][0], productList[x][2]])
     }
   }
 
   return match;
 }
-
-
-var a = ["grass","wheat","Butylene Glycol"]
-var b = ["milk", "watermelon"]
-
-k = getProducts(a, productInfo)
 
 function displayOutput(productList){
   output = ""
@@ -64,5 +58,7 @@ function displayOutput(productList){
   return output;
 }
 
-document.getElementById("test").innerHTML = displayOutput(k)
+document.getElementById("test").innerHTML = displayOutput(getProducts(["milk", "Butylene Glycol", "grass"], productInfo, 50))
+
+
 
