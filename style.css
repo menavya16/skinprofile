@@ -19,6 +19,10 @@
 
 }
 
+#header3{
+  padding-top: 40%;
+}
+
 .spacing{
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
@@ -45,6 +49,31 @@ body {
   position: absolute;
 }
 
+.text,
+.btn {
+  font-family: 'Indie Flower', cursive;
+}
 .blog {
   margin: 0 30px 0 30px;
+}
+
+.reg {
+  margin-bottom: 50px;
+}
+
+input {
+  background-color: rgba(0,0,0,0);
+}
+.question {
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgba(0,0,0,0);
+}
+
+#user {
+  padding-top: 10%;
+}
+
+.discover {
+  padding-top: 100px;
 }

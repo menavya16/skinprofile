@@ -11,18 +11,20 @@
         <link href="style.css?v={random number/string}" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     </head>
 
 
     <body id = "page-top">
       <div class="spacing">
         <div id=header>
-            <p class="text-center">Welcome to the new You</p>
+            <p class="text-center animated fadeInUp">Welcome to the new You</p>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center animated fadeInUp delay-1s">
                     <a href="login.php" class="btn btn-outline-secondary btn-lg">Login</a>
                     <a href="register.php" class="btn btn-outline-secondary btn-lg">Register</a>
 

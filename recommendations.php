@@ -19,7 +19,7 @@
       	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
-    </head>
+
 
 
     <body id = "page-top">
@@ -39,7 +39,6 @@
         var avoid_list = <?php echo(json_encode($avoid_list)); ?>;
         //main(avoid_list);
       </script>
-
     </body>
 
     <footer>
