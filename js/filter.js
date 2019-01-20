@@ -42,7 +42,7 @@ function getProducts(allergens, productList){
 
   for (var x in productList){
     if (suitable(allergens, productList[x][1])){
-      match.push([productList[x][0], productList[x][1]])
+      match.push([productList[x][0], productList[x][2]])
     }
   }
 
@@ -54,4 +54,15 @@ var a = ["grass","wheat","Butylene Glycol"]
 var b = ["milk", "watermelon"]
 
 k = getProducts(a, productInfo)
+
+function displayOutput(productList){
+  output = ""
+  for (var x in productList){
+    output = productList[x][0] + " Price: " + productList[x][1] + "<br>"
+  }
+
+  return output;
+}
+
+document.getElementById("test").innerHTML = displayOutput(k)
 
