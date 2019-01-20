@@ -17,7 +17,26 @@ var productInfo = []
 for (var x in data2){
 
   var y = JSON.parse(JSON.stringify(data2[x]))
-  productInfo.push([y.name, y.ing.split(',')]);
+  productInfo.push([y.name, y.ing.split(', ')]);
 }
 
+function includes(key, array){
+  return (array.indexOf(key) > -1)
+}
+
+function suitable(allergens, ingredients){
+  if (allergens.length == 0){
+    return true
+  }
+  else if (includes(allergens[0], ingredients)){
+    return false;
+  } 
+  else{
+    allergens.shift();
+    return suitable(allergens, ingredients)
+  }
+}
+
+var a = ["grass","wheat","Butylene Glycol"]
+var b = ["milk", "watermelon"]
 
