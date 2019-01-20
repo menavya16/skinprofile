@@ -1,20 +1,38 @@
 [
-  {
-    "name": "SK-II Facial Treatment Essence",
-    "description": "This pure, lightweight miracle water is quickly absorbed into the skin. Its formula gently exfoliates and helps moderate the skin's surface renewal cycle.",
-    "ing": "Galactomyces Ferment Filtrate (Pitera), Butylene Glycol, Pentylene Glycol, Water, Sodium Benzoate, Methylparaben, Sorbic Acid",
-    "price": 225,
-    "price_range": "200 - 250",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/61wYEzRXLqL._SY679_.jpg",
-    "url": "https://www.amazon.com/SK-II-Facial-Treatment-Essence-fl/dp/B002SQ0NOW"
-  },
-  {
-    "name": "Drunk Elephant: B-Hydra™ Intensive Hydration Serum",
-    "description": "B-Hydra™ is a cool drink of water for your thirsty skin. This ultra-hydrating vitamin B5 serum replenishes nutrients while delivering hydration throughout the day to improve the look of skin texture and tone.",
-    "ing": "Water, Coconut Alkanes, Ammonium Acryloyldimethyltaurate/VP Copolymer, Glycerin, Pentylene Glycol, Sclerocarya Birrea Seed Oil, Wheat Amino Acids, Ananas Sativus (Pineapple) Fruit Extract, Berberis Vulgaris Root Extract, Citrullus Lanatus (Watermelon) Fruit Extract, Lens Esculenta (Lentil) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Coco-Caprylate/Caprate, Panthenol, Sodium PCA, Sodium Hyaluronate Crosspolymer, Dipotassium Glycyrrhizate, Niacinamide, Cyclodextrin, Sodium Hyaluronate, Sodium Lactate, Phenoxyethanol, Hydroxyproline, Trisodium Ethylenediamine Disuccinate, Citric Acid, Caprylyl Glycol, Chlorphenesin, Ethylhexylglycerin",
-    "price": 65,
-    "price_range": "50 - 100",
-    "image": "https://www.sephora.com/productimages/product/p406712-av-01-zoom.jpg",
-    "url": "https://www.sephora.com/ca/en/product/b-hydra-intensive-hydration-gel-P406712"
-  }
+{
+  "name": "SK-II Facial Treatment Essence",
+  "description": "This pure, lightweight miracle water is quickly absorbed into the skin. Its formula gently exfoliates and helps moderate the skin's surface renewal cycle.",
+  "ing": "Galactomyces Ferment Filtrate (Pitera), Butylene Glycol, Pentylene Glycol, Water, Sodium Benzoate, Methylparaben, Sorbic Acid",
+  "price": 225,
+  "price_range": "200 - 250",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/61wYEzRXLqL._SY679_.jpg",
+  "url": "https://www.amazon.com/SK-II-Facial-Treatment-Essence-fl/dp/B002SQ0NOW"
+},
+{
+  "name": "Drunk Elephant: B-Hydra™ Intensive Hydration Serum",
+  "description": "B-Hydra™ is a cool drink of water for your thirsty skin. This ultra-hydrating vitamin B5 serum replenishes nutrients while delivering hydration throughout the day to improve the look of skin texture and tone.",
+  "ing": "Water, Coconut Alkanes, Ammonium Acryloyldimethyltaurate/VP Copolymer, Glycerin, Pentylene Glycol, Sclerocarya Birrea Seed Oil, Wheat Amino Acids, Ananas Sativus (Pineapple) Fruit Extract, Berberis Vulgaris Root Extract, Citrullus Lanatus (Watermelon) Fruit Extract, Lens Esculenta (Lentil) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Coco-Caprylate/Caprate, Panthenol, Sodium PCA, Sodium Hyaluronate Crosspolymer, Dipotassium Glycyrrhizate, Niacinamide, Cyclodextrin, Sodium Hyaluronate, Sodium Lactate, Phenoxyethanol, Hydroxyproline, Trisodium Ethylenediamine Disuccinate, Citric Acid, Caprylyl Glycol, Chlorphenesin, Ethylhexylglycerin",
+  "price": 65,
+  "price_range": "50 - 100",
+  "image": "https://www.sephora.com/productimages/product/p406712-av-01-zoom.jpg",
+  "url": "https://www.sephora.com/ca/en/product/b-hydra-intensive-hydration-gel-P406712"
+},
+{
+  "name": "Shiseido: Urban Environment Oil-Free UV Protector Broad Spectrum Face Sunscreen SPF 42",
+  "ing": "Water, Dimethicone, Isododecane, Sd Alcohol 40-B, Dipropylene Glycol, Ethylhexyl Palmitate, Peg-10 Dimethicone, Glycerin, Polymethylsilsesquioxane, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Polybutylene Glycol/Ppg-9/1 Copolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Xylitol, Methyl Methacrylate Crosspolymer, Thiotaurine, Scutellaria Baicalensis Root Extract, Paeonia Albiflora Root Extract, Ononis Spinosa Root Extract, Ectoin, Lauryl Peg-9 Polydimethylsiloxyethyl Dimethicone, Hydrogen Dimethicone, Butylene Glycol, Disodium Edta, Disteardimonium Hectorite, Alumina, Bht, Triethoxycaprylylsilane, Syzygium Jambos Leaf Extract, Tocopherol, Phenoxyethanol, Benzoic Acid, Fragrance, Titanium Dioxide, Mica",
+  "type": "sunscreen",
+  "price": 42
+},
+{
+  "name": "Fresh: Soy Face Cleanser",
+  "ing": "Water, Coco-Glucoside, Glycerin, Butylene Glycol, PEG-7 GlycerylCocoate, Xanthan Gum, Soybean Oil, Sunflower Seed Oil, Borago Officinalis Seed Oil, Aloe Barbadensis Leaf Juice, Cucumber Fruit Extract, Rosa Damascena Extract, Rosa Damascena Flower Water, Centaurea Cyanus Flower Extract, Soybean Sterols, Panax Ginseng Root Extract, Rosa Damascena Flower Oil, Mallow Flower Extract, Tocopherol, Ascorbyl Palmitate, PEG-120Methyl Glucose Dioleate, PEG-40Hydrogenated Castor Oil, Caprylyl Glycol, Polysorbate20, Caprylic/Capric Triglyceride, Silica, Benzoic Acid, Disodium EDTA, Citric Acid, Behenyl Alcohol, Glyceryl Stearate, Lecithin, Pentylene Glycol, Hydrolyzed Soy Protein, Caramel, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol",
+  "type": "cleanser",
+  "price": 47
+},
+{
+  "name": "",
+  "ing": "Water, Sodium Lauroamphoacetate, Sodium Trideceth Sulfate, Limnanthes Alba (Meadowfoam) Seed Oil, Coco-Glucoside, Coconut Alcohol, Peg-120 Methyl Glucose Dioleate, Glycerin, Carbomer, Isopropyl Alcohol, Polysorbate 20, Citric Acid, Imidazolidinyl Urea, Methylparaben, Aniba Rosaeodora (Rosewood) Wood Oil, Propylparaben, Triethanolamine, Amyris Balsamifera Bark Oil, Bulnesia Sarmientoi Wood Oil, Cymbopogon Martini Oil, Pelargonium Graveolens Flower Oil, Rosa Centifolia Flower Oil, Santalum Album (Sandalwood) Oil, Daucus Carota Sativa (Carrot) Seed Oil, Mimosa Tenuiflora Bark Extract, Ormenis Multicaulis Oil, Piper Nigrum (Pepper) Fruit Oil, Salvia Sclarea (Clary) Oil, Fd&C Yellow No. 5 (Ci 19140)",
+  "type": "cleanser",
+  "price"
+}
 ]
