@@ -1,4 +1,4 @@
-var data2 = 
+var data = 
   [
     {
       "name": "SK-II Facial Treatment Essence",
@@ -14,10 +14,10 @@ var data2 =
 
 var productInfo = []
 
-for (var x in data2){
+for (var x in data){
 
-  var y = JSON.parse(JSON.stringify(data2[x]))
-  productInfo.push([y.name, y.ing.split(', ')]);
+  var y = JSON.parse(JSON.stringify(data[x]))
+  productInfo.push([y.name, y.ing.split(', '), y.price]);
 }
 
 function includes(key, array){
@@ -37,6 +37,21 @@ function suitable(allergens, ingredients){
   }
 }
 
+function getProducts(allergens, productList){
+  var match = [];
+
+  for (var x in productList){
+    if (suitable(allergens, productList[x][1])){
+      match.push([productList[x][0], productList[x][1]])
+    }
+  }
+
+  return match;
+}
+
+
 var a = ["grass","wheat","Butylene Glycol"]
 var b = ["milk", "watermelon"]
+
+k = getProducts(a, productInfo)
 
