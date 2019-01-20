@@ -1,0 +1,1 @@
+6 6 * * * cd /Applications/MAMP/htdocs/folder && ./open.sh 
